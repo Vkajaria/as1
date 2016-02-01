@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.assignment1.vk.kajaria_fueltrack.EntryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/entry"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/entryDate"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentEnd="true"
+        android:autoText="false"
+        android:textIsSelectable="false"
+        android:hint="@string/date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/entryStation"
+        android:layout_below="@+id/entryDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/entryDate"
+        android:hint="@string/station" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/entryOdomoter"
+        android:layout_below="@+id/entryStation"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/entryStation"
+        android:hint="@string/odometer" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/entryGrade"
+        android:layout_below="@+id/entryOdomoter"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/entryOdomoter"
+        android:hint="@string/grade" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/entryAmount"
+        android:layout_below="@+id/entryGrade"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/amount" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/entryUnitCost"
+        android:layout_below="@+id/entryAmount"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/entryAmount"
+        android:hint="@string/unitcost" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/save"
+        android:layout_marginStart="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="84dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/cancel"
+        android:layout_alignTop="@+id/save"
+        android:layout_alignEnd="@+id/entryUnitCost"
+        android:layout_marginEnd="43dp" />
+
+</RelativeLayout>

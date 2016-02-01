@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">kajaria-FuelTrack</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_new_entry">AddNewEntryActivity</string>
+    <string name="newentrydate">Date (yyyy-dd-mm)</string>
+    <string name="newEntryText">Add a new entry</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <string name="entry">ENTRY</string>
+    <string name="date">Date (yyyy-mm-dd)</string>
+    <string name="station">Station</string>
+    <string name="odometer">Odometer Reading (km)</string>
+    <string name="grade">Fuel Grade</string>
+    <string name="amount">Fuel Amount (L)</string>
+    <string name="unitcost">Fuel Unit Cost (cents/L)</string>
+    <string name="title">My log entries:</string>
+    <string name="newentry">New Entry</string>
+    <string name="totalfuelcost"></string>
+    <string name="showfuelcost">Show Total Overall Fuel Cost</string>
+</resources>
